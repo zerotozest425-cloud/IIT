@@ -59,12 +59,7 @@ function Brand({ footer = false }: { footer?: boolean }) {
         href="#home"
         aria-label="Infinity Institute of Technology home"
       >
-        <span className="brand-name">
-          <span className="brand-infinity" aria-hidden="true">
-            ∞
-          </span>
-          IIT
-        </span>
+        <span className="brand-name">IIT</span>
         <span className="brand-tagline">
           INFINITY INSTITUTE OF TECHNOLOGY
         </span>
