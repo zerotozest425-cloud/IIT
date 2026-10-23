@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Single-page app: serve index.html for any unknown path instead of a 404/blank page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
