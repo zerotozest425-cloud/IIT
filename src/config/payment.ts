@@ -46,8 +46,11 @@ export function paymentScreenshotLink(course: Course) {
   const requestedLinks = isBundle
     ? `the links for all ${course.modules.length} courses in my bundle`
     : "the access link for this course"
+  const configuredAccessResource = course.accessUrl
+    ? "\nThe course resource is configured; send it only after verifying this payment.\n"
+    : ""
 
   return whatsappLink(
-    `Hello Computer Point Class,\nI have made a UPI payment and would like my course links.\n\nCourse: ${course.name}\nAmount: ₹${course.price}\n${includedCourses}\nPlease verify my payment screenshot and send ${requestedLinks} here on WhatsApp.\n\nI will attach my payment screenshot in this chat.\n\nThank you.`,
+    `Hello Computer Point Class,\nI have made a UPI payment and would like my course links.\n\nCourse: ${course.name}\nAmount: ₹${course.price}\n${includedCourses}${configuredAccessResource}\nPlease verify my payment screenshot and send ${requestedLinks} here on WhatsApp.\n\nI will attach my payment screenshot in this chat.\n\nThank you.`,
   )
 }

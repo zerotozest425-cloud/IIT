@@ -8,6 +8,7 @@ export interface Course {
   features: string[]
   modules: string[]
   thumbnail: string
+  accessUrl?: string
 }
 
 export const courses: Course[] = [
@@ -18,6 +19,8 @@ export const courses: Course[] = [
     price: 197,
     category: "Design",
     thumbnail: "canva",
+    accessUrl:
+      "https://drive.google.com/drive/folders/1GaiIZGwb52g-MLkPHIv-kx7T0U_kZcTS?usp=drive_link",
     description:
       "Master Canva and learn how to create professional graphics, social media posts, posters, thumbnails, presentations and other stunning visual content.",
     features: [
@@ -122,6 +125,8 @@ export const courses: Course[] = [
     price: 197,
     category: "Web Development",
     thumbnail: "wordpress",
+    accessUrl:
+      "https://drive.google.com/drive/folders/1_cgZApphU4CteH5ZrEA7yT1GWQT8oFb_?usp=drive_link",
     description:
       "Learn how to create and manage professional websites using WordPress.",
     features: [
@@ -148,6 +153,8 @@ export const courses: Course[] = [
     price: 197,
     category: "Animation",
     thumbnail: "animation",
+    accessUrl:
+      "https://youtube.com/playlist?list=PLNSuDi1DoGJz6sGYaHXgbYNQ_StJpY6m7&si=ih7mJRHIz7Pja7DX",
     description:
       "Learn the fundamentals of 3D animation and create engaging animated scenes from scratch.",
     features: [

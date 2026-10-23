@@ -26,4 +26,4 @@ pnpm build
 pnpm preview
 ```
 
-The payment UI can be explored locally. Completing Razorpay purchases requires the corresponding Supabase Edge Function and Razorpay server configuration. Set the `CHATGPT_ACCESS_URL`, `VIDEO_EDITING_ACCESS_URL`, and `DIGITAL_MARKETING_ACCESS_URL` Edge Function secrets to the shareable course folder URLs to return those links after verified payment. UPI payment details are configured in `src/config/payment.ts`.
+The payment UI uses direct UPI payments. Customers pay through their UPI app and send the payment screenshot on WhatsApp for manual verification. UPI payment details are configured in `src/config/payment.ts`.
